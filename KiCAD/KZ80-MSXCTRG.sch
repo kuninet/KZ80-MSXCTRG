@@ -704,7 +704,7 @@ F 3 "~" H 2100 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1600 5250 1900 5250
+	1600 5250 1850 5250
 Wire Wire Line
 	1600 5350 1900 5350
 Wire Wire Line
@@ -724,7 +724,7 @@ Entry Wire Line
 Entry Wire Line
 	1500 5450 1600 5550
 Wire Wire Line
-	2400 5250 2700 5250
+	2400 5250 2650 5250
 Wire Wire Line
 	2400 5350 2700 5350
 Wire Wire Line
@@ -842,26 +842,13 @@ Entry Wire Line
 Wire Bus Line
 	2800 4900 3750 4900
 Connection ~ 2800 4900
-$Comp
-L power:GND #PWR08
-U 1 1 5D95374D
-P 3600 3150
-F 0 "#PWR08" H 3600 2900 50  0001 C CNN
-F 1 "GND" H 3605 2977 50  0000 C CNN
-F 2 "" H 3600 3150 50  0001 C CNN
-F 3 "" H 3600 3150 50  0001 C CNN
-	1    3600 3150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	5000 2250 3600 2250
+	5000 2250 4400 2250
 Wire Wire Line
-	3600 2950 5000 2950
+	4400 2950 5000 2950
 Wire Wire Line
-	3600 2250 3600 2950
-Connection ~ 3600 2950
-Wire Wire Line
-	3600 2950 3600 3150
+	4400 2250 4400 2950
+Connection ~ 4400 2950
 Text GLabel 3550 3650 0    50   Input ~ 0
 SBCBUS
 Wire Wire Line
@@ -1416,23 +1403,23 @@ NoConn ~ 8850 4300
 $Comp
 L 74xx:74LS32 U3
 U 3 1 5DFAABD4
-P 1350 6600
-F 0 "U3" H 1350 6600 50  0000 C CNN
-F 1 "74HC32" H 1650 6500 50  0000 C CNN
-F 2 "" H 1350 6600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 1350 6600 50  0001 C CNN
-	3    1350 6600
+P 1350 6950
+F 0 "U3" H 1350 6950 50  0000 C CNN
+F 1 "74HC32" H 1650 6850 50  0000 C CNN
+F 2 "" H 1350 6950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 1350 6950 50  0001 C CNN
+	3    1350 6950
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74LS32 U3
 U 4 1 5DFAAC92
-P 1350 7100
-F 0 "U3" H 1350 7100 50  0000 C CNN
-F 1 "74HC32" H 1650 7000 50  0000 C CNN
-F 2 "" H 1350 7100 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 1350 7100 50  0001 C CNN
-	4    1350 7100
+P 4450 4650
+F 0 "U3" H 4450 4650 50  0000 C CNN
+F 1 "74HC32" H 4750 4550 50  0000 C CNN
+F 2 "" H 4450 4650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 4450 4650 50  0001 C CNN
+	4    4450 4650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1458,24 +1445,12 @@ F 3 "" H 850 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	850  7200 1050 7200
+	850  7050 1050 7050
 Wire Wire Line
-	850  7200 850  7000
+	850  7050 850  6850
 Wire Wire Line
-	850  7000 1050 7000
-Connection ~ 850  7200
-Wire Wire Line
-	850  7000 850  6700
-Wire Wire Line
-	850  6700 1050 6700
-Connection ~ 850  7000
-Wire Wire Line
-	850  6700 850  6500
-Wire Wire Line
-	850  6500 1050 6500
-Connection ~ 850  6700
-NoConn ~ 1650 6600
-NoConn ~ 1650 7100
+	850  6850 1050 6850
+NoConn ~ 1650 6950
 NoConn ~ 8300 4600
 Entry Wire Line
 	10750 3200 10850 3100
@@ -1513,8 +1488,6 @@ Wire Wire Line
 Connection ~ 6400 5750
 Wire Wire Line
 	7250 5750 7100 5750
-Wire Wire Line
-	850  7200 850  7350
 $Comp
 L Device:CP C5
 U 1 1 5D93E71C
@@ -1639,6 +1612,31 @@ Text Label 5700 6300 0    50   ~ 0
 ~INT
 Text Label 7550 5600 0    50   ~ 0
 ~INT-J
+Wire Wire Line
+	850  7350 850  7050
+Connection ~ 850  7050
+Wire Wire Line
+	1850 4550 1850 5250
+Wire Wire Line
+	1850 4550 4150 4550
+Connection ~ 1850 5250
+Wire Wire Line
+	1850 5250 1900 5250
+Wire Wire Line
+	2650 5250 2650 4750
+Wire Wire Line
+	2650 4750 4150 4750
+Connection ~ 2650 5250
+Wire Wire Line
+	2650 5250 2700 5250
+Wire Wire Line
+	4400 4200 5050 4200
+Wire Wire Line
+	5050 4200 5050 4650
+Wire Wire Line
+	5050 4650 4750 4650
+Wire Wire Line
+	4400 2950 4400 4200
 Wire Bus Line
 	6150 4200 6150 4600
 Wire Bus Line
