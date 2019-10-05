@@ -34,34 +34,34 @@
   )
   (placement
     (component Capacitor_THT:CP_Radial_D5.0mm_P2.50mm
-      (place C6 131500 -130000 front 0 (PN 10u))
+      (place C6 141070 -129880 front 180 (PN 10u))
     )
     (component Capacitor_THT:CP_Radial_D5.0mm_P2.50mm::1
-      (place C5 134000 -86000 front 270 (PN 10u))
+      (place C5 141550 -94330 front 270 (PN 10u))
     )
     (component Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm
-      (place C7 162500 -120500 front 90 (PN 0.1u))
-      (place C3 136000 -120500 front 90 (PN 0.1u))
-      (place C1 136000 -102000 front 90 (PN 0.1u))
+      (place C7 167260 -117450 front 90 (PN 0.1u))
+      (place C3 141630 -117520 front 90 (PN 0.1u))
+      (place C1 141510 -103540 front 90 (PN 0.1u))
     )
     (component Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm::1
-      (place C4 162500 -102000 front 90 (PN 0.1u))
-      (place C2 187000 -102000 front 90 (PN 0.1u))
+      (place C4 167140 -103470 front 90 (PN 0.1u))
+      (place C2 190420 -103470 front 90 (PN 0.1u))
     )
     (component Connector_PinHeader_2.54mm:PCB_Edge_Conn_2x25_P2.54mm_Vertical
       (place J1 198500 -144000 front 270 (PN "MSX SLOT-A"))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
-      (place JP1 203500 -116000 front 0 (PN INT_JP))
+      (place JP1 199820 -117890 front 0 (PN INT_JP))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal
-      (place J3 210000 -116000 front 0 (PN "SLT-JP"))
+      (place J3 208720 -117840 front 0 (PN "SLT-JP"))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical
-      (place J5 123500 -106740 front 180 (PN "PPI PORT-A"))
+      (place J5 130970 -102200 front 180 (PN "PPI PORT-A"))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical::1
-      (place J4 123500 -134000 front 180 (PN "Z80 CTRL"))
+      (place J4 130970 -128870 front 180 (PN "Z80 CTRL"))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Horizontal
       (place J2 143500 -90000 front 90 (PN "SBC8080 BUS"))
@@ -75,20 +75,20 @@
       (place MH1 122500 -82500 front 0 (PN MountingHole))
     )
     (component "Package_DIP:DIP-14_W7.62mm_Socket"
-      (place U5 165500 -107500 front 90 (PN 74HC00))
-      (place U3 139000 -126000 front 90 (PN 74HC32))
+      (place U5 170140 -108970 front 90 (PN 74HC00))
+      (place U3 144630 -123020 front 90 (PN 74HC32))
     )
     (component "Package_DIP:DIP-14_W7.62mm_Socket::1"
-      (place U4 165500 -126000 front 90 (PN 74HC00))
+      (place U4 170260 -122950 front 90 (PN 74HC00))
     )
     (component "Package_DIP:DIP-16_W7.62mm_Socket"
-      (place U2 139000 -107500 front 90 (PN 74HC153))
+      (place U2 144510 -109040 front 90 (PN 74HC153))
     )
     (component "Package_DIP:DIP-16_W7.62mm_Socket::1"
-      (place U1 190000 -107500 front 90 (PN 74HC139))
+      (place U1 193420 -108970 front 90 (PN 74HC139))
     )
     (component Resistor_THT:R_Array_SIP9
-      (place RN1 129000 -111500 front 90 (PN 10k))
+      (place RN1 136370 -113790 front 90 (PN 10k))
     )
   )
   (library
@@ -1320,8 +1320,8 @@
       (pins U3-3 U1-15)
     )
     (net GND
-      (pins C6-1 C5-1 C7-1 C4-1 C3-1 C2-1 C1-1 J1-41 J1-43 J2-2 J2-4 U5-9 U5-10 U5-12
-        U5-13 U5-7 U4-7 U3-12 U3-13 U3-7 U2-8 U1-8)
+      (pins C6-1 C5-1 C7-1 C4-1 C3-1 C2-1 C1-1 J1-41 J1-43 J2-2 J2-4 U5-12 U5-13 U5-7
+        U4-7 U3-12 U3-13 U3-7 U2-8 U1-8)
     )
     (net "Net-(U2-Pad1)"
       (pins U5-3 U5-4 U2-15 U2-1)
@@ -1355,9 +1355,6 @@
     )
     (net /~RESET
       (pins J1-15 J4-6 U5-1)
-    )
-    (net "Net-(U5-Pad8)"
-      (pins U5-8)
     )
     (net "Net-(U5-Pad2)"
       (pins U5-2 U5-6)
@@ -1515,9 +1512,6 @@
     (net /PC4
       (pins J5-9)
     )
-    (net "/~INT-J"
-      (pins JP1-3 J3-5)
-    )
     (net "/~INT-S"
       (pins J1-8 JP1-2)
     )
@@ -1545,18 +1539,24 @@
     (net "/-12V"
       (pins J1-50)
     )
+    (net "/INT-J"
+      (pins J3-5 U5-8)
+    )
+    (net "Net-(JP1-Pad3)"
+      (pins JP1-3 U5-9 U5-10)
+    )
     (class kicad_default "" /+12V "/-12V" /A0 /A1 /A10 /A11 /A12 /A13 /A14
       /A15 /A2 /A3 /A4 /A5 /A6 /A7 /A8 /A9 /CLK /D0 /D1 /D2 /D3 /D4 /D5 /D6
-      /D7 /INT /PA0 /PA1 /PA2 /PA3 /PA4 /PA5 /PA6 /PA7 /PC4 /PC5 /PC6 /PC7
-      /RES /SW1 /SW2 /~BUSA /~BUSDIR /~BUSR /~CS0 /~CS1 /~CS12 /~CS2 /~HALT
-      /~INT "/~INT-J" "/~INT-S" /~IORQ /~M1 /~MEMRD /~MEMWR /~MREQ /~NMI /~RD
-      /~RESET /~RFSH /~SLT0 /~SLT1 /~SLT2 /~SLT3 /~WAIT /~WR "Net-(J1-Pad16)"
+      /D7 /INT "/INT-J" /PA0 /PA1 /PA2 /PA3 /PA4 /PA5 /PA6 /PA7 /PC4 /PC5
+      /PC6 /PC7 /RES /SW1 /SW2 /~BUSA /~BUSDIR /~BUSR /~CS0 /~CS1 /~CS12 /~CS2
+      /~HALT /~INT "/~INT-J" "/~INT-S" /~IORQ /~M1 /~MEMRD /~MEMWR /~MREQ
+      /~NMI /~RD /~RESET /~RFSH /~SLT0 /~SLT1 /~SLT2 /~SLT3 /~WAIT /~WR "Net-(J1-Pad16)"
       "Net-(J1-Pad49)" "Net-(J1-Pad5)" "Net-(J2-Pad17)" "Net-(J2-Pad19)" "Net-(J2-Pad22)"
       "Net-(J2-Pad24)" "Net-(J2-Pad5)" "Net-(J2-Pad6)" "Net-(J2-Pad7)" "Net-(J3-Pad4)"
-      "Net-(J4-Pad14)" "Net-(J5-Pad13)" "Net-(J5-Pad14)" "Net-(U1-Pad1)" "Net-(U1-Pad13)"
-      "Net-(U1-Pad14)" "Net-(U1-Pad15)" "Net-(U1-Pad7)" "Net-(U2-Pad1)" "Net-(U3-Pad11)"
-      "Net-(U3-Pad2)" "Net-(U3-Pad8)" "Net-(U4-Pad3)" "Net-(U5-Pad11)" "Net-(U5-Pad2)"
-      "Net-(U5-Pad8)"
+      "Net-(J4-Pad14)" "Net-(J5-Pad13)" "Net-(J5-Pad14)" "Net-(JP1-Pad3)"
+      "Net-(U1-Pad1)" "Net-(U1-Pad13)" "Net-(U1-Pad14)" "Net-(U1-Pad15)" "Net-(U1-Pad7)"
+      "Net-(U2-Pad1)" "Net-(U3-Pad11)" "Net-(U3-Pad2)" "Net-(U3-Pad8)" "Net-(U4-Pad3)"
+      "Net-(U5-Pad11)" "Net-(U5-Pad2)" "Net-(U5-Pad8)"
       (circuit
         (use_via Via[0-1]_800:400_um)
       )
