@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 14344)
+    (start_pass_no 7438)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -73,14 +73,15 @@
     "Net-(U1-Pad1)" /~SLT3 /A14 /~SLT2 /A15 /~SLT1 /~CS0 /~SLT0
     /~CS1 "Net-(U1-Pad13)" /~CS2 "Net-(U1-Pad14)" "Net-(U1-Pad7)" "Net-(U1-Pad15)" "Net-(U2-Pad1)" /~MREQ
     "Net-(U3-Pad8)" "Net-(U3-Pad2)" /~RD "Net-(U3-Pad11)" /~CS12 "Net-(U4-Pad3)" "Net-(J3-Pad4)" /~RFSH
-    /~RESET "Net-(U5-Pad2)" "Net-(U5-Pad11)" "Net-(J2-Pad5)" "Net-(J2-Pad6)" "Net-(J2-Pad7)" /CLK /D0
-    /D1 /D2 /D3 /D4 /D5 /D6 /D7 "Net-(J2-Pad17)"
-    /~MEMRD "Net-(J2-Pad19)" /~MEMWR /RES "Net-(J2-Pad22)" /INT "Net-(J2-Pad24)" /A0
-    /A1 /A2 /A3 /A4 /A5 /A6 /A7 /A8
-    /A9 /A10 /A11 /A12 /A13 /~WR /~IORQ /~M1
-    /~BUSR /~BUSA /~NMI /~INT /~WAIT /~HALT "Net-(J4-Pad14)" "Net-(J5-Pad14)"
-    "Net-(J5-Pad13)" /PC7 /PC6 /PC5 /PC4 "/~INT-S" "Net-(J1-Pad5)" /~BUSDIR
-    "Net-(J1-Pad16)" /SW1 /SW2 /+12V "Net-(J1-Pad49)" "/-12V" "/INT-J" "Net-(JP1-Pad3)"
+    /~RESET "Net-(U5-Pad2)" "Net-(U5-Pad11)" "Net-(J2-Pad5)" "Net-(J2-Pad6)" /CLK /D0 /D1
+    /D2 /D3 /D4 /D5 /D6 /D7 "Net-(J2-Pad17)" /~MEMRD
+    "Net-(J2-Pad19)" /~MEMWR /RES "Net-(J2-Pad22)" /INT "Net-(J2-Pad24)" /A0 /A1
+    /A2 /A3 /A4 /A5 /A6 /A7 /A8 /A9
+    /A10 /A11 /A12 /A13 /~WR /~IORQ /~M1 /~BUSR
+    /~BUSA /~NMI /~INT /~WAIT /~HALT "Net-(J4-Pad14)" "Net-(J5-Pad14)" "Net-(J5-Pad13)"
+    /PC7 /PC6 /PC5 /PC4 "/~INT-S" "Net-(J1-Pad5)" /~BUSDIR "Net-(J1-Pad16)"
+    /SW1 /SW2 /+12V "Net-(J1-Pad49)" "/-12V" "/INT-J" "Net-(JP1-Pad3)" "/~WAIT_C"
+    /RDYIN "Net-(JP2-Pad1)" "Net-(R1-Pad2)" "Net-(U6-Pad6)" "Net-(U6-Pad4)" "Net-(U6-Pad8)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
