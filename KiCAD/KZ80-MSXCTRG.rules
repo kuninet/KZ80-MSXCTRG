@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 7438)
+    (start_pass_no 2556)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -80,8 +80,9 @@
     /A10 /A11 /A12 /A13 /~WR /~IORQ /~M1 /~BUSR
     /~BUSA /~NMI /~INT /~WAIT /~HALT "Net-(J4-Pad14)" "Net-(J5-Pad14)" "Net-(J5-Pad13)"
     /PC7 /PC6 /PC5 /PC4 "/~INT-S" "Net-(J1-Pad5)" /~BUSDIR "Net-(J1-Pad16)"
-    /SW1 /SW2 /+12V "Net-(J1-Pad49)" "/-12V" "/INT-J" "Net-(JP1-Pad3)" "/~WAIT_C"
-    /RDYIN "Net-(JP2-Pad1)" "Net-(R1-Pad2)" "Net-(U6-Pad6)" "Net-(U6-Pad4)" "Net-(U6-Pad8)"
+    /SW1 /SW2 /+12V "/-12V" "/INT-J" "Net-(JP1-Pad3)" "/~WAIT_C" /RDYIN
+    "Net-(JP2-Pad1)" "Net-(R1-Pad2)" "Net-(U6-Pad6)" "Net-(U6-Pad4)" "Net-(U6-Pad8)" "Net-(C9-Pad2)" "Net-(C9-Pad1)" "Net-(C11-Pad2)"
+    "Net-(C11-Pad1)" "Net-(J6-Pad1)" "Net-(J7-Pad16)" "Net-(J7-Pad5)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
