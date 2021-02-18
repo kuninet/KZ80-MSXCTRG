@@ -34,10 +34,10 @@
   )
   (placement
     (component PCBEdge:PCB_Edge_Conn_2x25_P2.54mm_Vertical
-      (place J7 198280 -166570 front 270 (PN "MSX SLOT-B"))
+      (place J7 198500 -144000 front 270 (PN "MSX SLOT-B"))
     )
     (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
-      (place R7 128430 -160220 front 270 (PN 22k))
+      (place R7 129500 -163000 front 270 (PN 22k))
       (place R6 129700 -148790 front 90 (PN 22k))
       (place R5 195740 -133550 front 0 (PN 10k))
       (place R4 167800 -123390 front 90 (PN 10k))
@@ -49,10 +49,10 @@
       (place J6 120810 -171650 front 180 (PN SOUND))
     )
     (component Capacitor_THT:CP_Radial_D5.0mm_P2.50mm
-      (place C11 120810 -160220 front 0 (PN 10u))
-      (place C10 138590 -155140 front 0 (PN 10u))
-      (place C9 120810 -138630 front 0 (PN 10u))
-      (place C6 141000 -132000 front 180 (PN 10u))
+      (place C11 126500 -156250 front 0 (PN 10u))
+      (place C10 143000 -156250 front 0 (PN 10u))
+      (place C9 134500 -156250 front 0 (PN 10u))
+      (place C6 137000 -132000 front 0 (PN 10u))
     )
     (component "Package_DIP:DIP-14_W7.62mm_Socket"
       (place U6 174150 -133950 front 90 (PN 74HC74))
@@ -75,7 +75,7 @@
       (place C1 141510 -103540 front 90 (PN 0.1u))
     )
     (component Connector_PinHeader_2.54mm:PCB_Edge_Conn_2x25_P2.54mm_Vertical
-      (place J1 198500 -144000 front 270 (PN "MSX SLOT-A"))
+      (place J1 198500 -169000 front 270 (PN "MSX SLOT-A"))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
       (place JP1 199820 -117890 front 0 (PN INT_JP))
@@ -1767,13 +1767,13 @@
       /~CS2 /~HALT /~INT "/~INT-S" /~IORQ /~M1 /~MEMRD /~MEMWR /~MREQ /~NMI
       /~RD /~RESET /~RFSH /~SLT0 /~SLT1 /~SLT2 /~SLT3 /~WAIT /~WAIT_C /~WR
       "Net-(C11-Pad1)" "Net-(C11-Pad2)" "Net-(C9-Pad1)" "Net-(C9-Pad2)" "Net-(J1-Pad16)"
-      "Net-(J1-Pad49)" "Net-(J1-Pad5)" "Net-(J2-Pad17)" "Net-(J2-Pad19)" "Net-(J2-Pad22)"
-      "Net-(J2-Pad24)" "Net-(J2-Pad5)" "Net-(J2-Pad6)" "Net-(J3-Pad4)" "Net-(J4-Pad14)"
-      "Net-(J5-Pad13)" "Net-(J5-Pad14)" "Net-(J6-Pad1)" "Net-(J7-Pad16)" "Net-(J7-Pad5)"
-      "Net-(JP1-Pad3)" "Net-(JP2-Pad1)" "Net-(R1-Pad2)" "Net-(U1-Pad1)" "Net-(U1-Pad13)"
-      "Net-(U1-Pad14)" "Net-(U1-Pad15)" "Net-(U1-Pad7)" "Net-(U2-Pad1)" "Net-(U3-Pad11)"
-      "Net-(U3-Pad2)" "Net-(U3-Pad8)" "Net-(U4-Pad3)" "Net-(U5-Pad11)" "Net-(U5-Pad2)"
-      "Net-(U6-Pad4)" "Net-(U6-Pad6)" "Net-(U6-Pad8)"
+      "Net-(J1-Pad5)" "Net-(J2-Pad17)" "Net-(J2-Pad19)" "Net-(J2-Pad22)" "Net-(J2-Pad24)"
+      "Net-(J2-Pad5)" "Net-(J2-Pad6)" "Net-(J3-Pad4)" "Net-(J4-Pad14)" "Net-(J5-Pad13)"
+      "Net-(J5-Pad14)" "Net-(J6-Pad1)" "Net-(J7-Pad16)" "Net-(J7-Pad5)" "Net-(JP1-Pad3)"
+      "Net-(JP2-Pad1)" "Net-(R1-Pad2)" "Net-(U1-Pad1)" "Net-(U1-Pad13)" "Net-(U1-Pad14)"
+      "Net-(U1-Pad15)" "Net-(U1-Pad7)" "Net-(U2-Pad1)" "Net-(U3-Pad11)" "Net-(U3-Pad2)"
+      "Net-(U3-Pad8)" "Net-(U4-Pad3)" "Net-(U5-Pad11)" "Net-(U5-Pad2)" "Net-(U6-Pad4)"
+      "Net-(U6-Pad6)" "Net-(U6-Pad8)"
       (circuit
         (use_via Via[0-1]_800:400_um)
       )
